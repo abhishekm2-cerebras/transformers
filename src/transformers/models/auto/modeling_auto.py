@@ -31,6 +31,7 @@ logger = logging.get_logger(__name__)
 
 MODEL_MAPPING_NAMES = OrderedDict(
     [
+        ("jais_plus", "JaisPlusModel"),
         # Base model mapping
         ("albert", "AlbertModel"),
         ("align", "AlignModel"),
@@ -373,6 +374,7 @@ MODEL_MAPPING_NAMES = OrderedDict(
 
 MODEL_FOR_PRETRAINING_MAPPING_NAMES = OrderedDict(
     [
+        ("jais_plus", "JaisPlusForCausalLM"),
         # Model for pre-training mapping
         ("albert", "AlbertForPreTraining"),
         ("bart", "BartForConditionalGeneration"),
@@ -551,6 +553,7 @@ MODEL_WITH_LM_HEAD_MAPPING_NAMES = OrderedDict(
 
 MODEL_FOR_CAUSAL_LM_MAPPING_NAMES = OrderedDict(
     [
+        ("jais_plus", "JaisPlusForCausalLM"),
         # Model for Causal LM mapping
         ("arcee", "ArceeForCausalLM"),
         ("aria_text", "AriaTextForCausalLM"),

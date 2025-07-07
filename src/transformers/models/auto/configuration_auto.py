@@ -35,6 +35,7 @@ _CallableT = TypeVar("_CallableT", bound=Callable[..., Any])
 
 CONFIG_MAPPING_NAMES = OrderedDict[str, str](
     [
+        ("jais_plus", "JaisPlusConfig"),
         # Add configs here
         ("albert", "AlbertConfig"),
         ("align", "AlignConfig"),
@@ -405,6 +406,7 @@ CONFIG_MAPPING_NAMES = OrderedDict[str, str](
 
 MODEL_NAMES_MAPPING = OrderedDict[str, str](
     [
+        ("jais_plus", "JaisPlusModel"),
         # Add full (and cased) model names here
         ("albert", "ALBERT"),
         ("align", "ALIGN"),

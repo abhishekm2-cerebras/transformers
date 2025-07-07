@@ -278,6 +278,7 @@ _import_structure = {
         "VptqConfig",
     ],
     "video_utils": [],
+    "models.jais_plus": ["JaisPlusConfig"],
 }
 
 # tokenizers-backed objects
